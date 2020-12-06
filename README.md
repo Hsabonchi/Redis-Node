@@ -4,7 +4,7 @@ Redis with node App
 
 #### Installation
 
-1. [Install Redis](https://redis.io/download) do not forget to to run `make` command.
+1. [Install Redis](https://redis.io/download) do not forget to run `make` command.
 2. Change directory to redis  e.g `cd redis-6.0.9/`.
 3. Run Redis with: `src/redis-server`.
 4. Install node_redis, as you may have guessed, is the Redis client for Node.js. You can install it via npm using the following command. `npm install redis`
