@@ -19,7 +19,8 @@
 `Note that Redis doesn’t support nested objects. All the property values in the object will be coerced into strings before getting stored`.
 
 - Redis stores data in a key-value format.
-- Redis no tables,no query language.
+- Redis no tables,no query language and no schema.
+- 
 
 
 - Ref
