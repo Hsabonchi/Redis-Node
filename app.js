@@ -51,9 +51,6 @@ client.exists('key', function(err, reply) {
 
 client.hmset("users", { firstName: "Anthony", firstName: " Mark"});
 
-
-2
-3
 client.hgetall("users", function(err, object) {
   console.log(object);
 });
