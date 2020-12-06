@@ -16,7 +16,9 @@
 4. Install node_redis, as you may have guessed, is the Redis client for Node.js. You can install it via npm using the following command. `npm install redis`
 
 
-`Note that Redis doesn’t support nested objects. All the property values in the object will be coerced into strings before getting stored`
+`Note that Redis doesn’t support nested objects. All the property values in the object will be coerced into strings before getting stored`.
+
+- Redis stores data in a key-value format
 
 
 
