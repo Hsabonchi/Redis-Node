@@ -1,0 +1,21 @@
+{
+  "name": "rddis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "iorejson": "^0.1.1",
+    "redis": "^3.0.2",
+    "redis-json": "^4.3.0",
+    "redis-json-set": "^0.1.1",
+    "redis-rejson": "^1.0.0",
+    "redis-store-json": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
