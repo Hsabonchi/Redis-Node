@@ -23,6 +23,7 @@
 If you have redis-server running on the same machine as node, then the defaults for port and host are probably fine and you don't need to supply any arguments. createClient() returns a RedisClient object.
 
 - Make sure to have your redis-server up and running
+<img src="Img/server">
 
 
 
