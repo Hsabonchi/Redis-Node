@@ -27,7 +27,7 @@ If you have redis-server running on the same machine as node, then the defaults 
 <img src="Redis-Node/Img/server.png">
 
 ### Redis-store-json
-- In order to store and get json into Redis DB We need to install `Redis-store-json`.
+- In order to store and get json into Redis DB We need to install `Redis-store-json` .
 - Redis-store-json which is a light nodejs module that will allow us to easily store, get and modify JSON objects into redis database. It is based on promise, so every function works with promiseYou will also need the redis_nodejs package module.
 
 
