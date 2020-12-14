@@ -19,6 +19,10 @@
 3. Run Redis with: `src/redis-server`.
 4. Install node_redis, as you may have guessed, is the Redis client for Node.js. You can install it via npm using the following command. `npm install redis`
 
+### redis.createClient()
+If you have redis-server running on the same machine as node, then the defaults for port and host are probably fine and you don't need to supply any arguments. createClient() returns a RedisClient object.
+
+- Make sure to have your redis-server up and running
 
 
 
