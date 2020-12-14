@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "JSON-REDIS",
+		"_postman_id": "a96a833c-f758-6549-39ef-7abc50203c1c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All users",
+			"request": {
+				"url": "http://localhost:4042",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \n    \"name\":\"Alex Alice\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add a user ",
+			"request": {
+				"url": "http://localhost:4042",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"Mark smith\"\t\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

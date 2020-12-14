@@ -16,7 +16,7 @@ const app = express();
 // enable parsing json object
 app.use(express.json());
 
-// Creating an array of users
+// Creating an array of users and  to be store into DB
 let users = [
   {
     Id: 1,
@@ -29,7 +29,7 @@ let users = [
 ];
 
 
-// set a new JSON key 'Users'
+ // set  'Key_Users' which is a Redis_key into RD
 redisJson
   .set("Key_Users", users)
   .then(() => {
@@ -40,9 +40,9 @@ redisJson
   });
 
 
-    //this endpoint to list all users
+    //This endpoint to get all users 
     app.get("/", (req, res) => {
-    // retrieve all  users
+    // retrieve all  users  from Redid DB using 'Key_Users' as a key
     redisJson
         .getJSON("Key_Users")
         .then((data) => {
@@ -58,15 +58,15 @@ app.post("/", (req, res) => {
     if (!req.body.name) {
         res.status(4000).send("Name is required");
     }
-    // read user obj
+    
     const user = {
         id: users.length + 1,
         name: req.body.name,
     };
-    // add user object to users
+    // add the user users array
     users.push(user);
 
-  
+   
 
   redisJson
     .set("Key_Users", users)
