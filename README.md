@@ -6,7 +6,11 @@
 - Redis typically holds the whole dataset in memory
 - Redis has also been ranked the #4 NoSQL database in user satisfaction 
 - Redis provides a data model that is very unusual compared to a relational database management system (RDBMS).
-- data must be stored in a way which is suitable later for fast retrieval, without help from the database system in form of secondary indexes, aggregations or other common features of traditional RDBMS
+- data must be stored in a way which is suitable later for fast retrieval, without help from the database system in form of secondary indexes, aggregations or other common features of traditional RDBMS.
+- Redis stores data in a key-value format.
+- Redis no tables,no query language and no schema.
+
+` Note that Redis doesn’t support nested objects. All the property values in the object will be coerced into strings before getting stored `.
 
 #### Installation
 
@@ -15,12 +19,13 @@
 3. Run Redis with: `src/redis-server`.
 4. Install node_redis, as you may have guessed, is the Redis client for Node.js. You can install it via npm using the following command. `npm install redis`
 
+### redis.createClient()
+If you have redis-server running on the same machine as node, then the defaults for port and host are probably fine and you don't need to supply any arguments. createClient() returns a RedisClient object.
 
-`Note that Redis doesn’t support nested objects. All the property values in the object will be coerced into strings before getting stored`.
+- Make sure to have your redis-server up and running
 
-- Redis stores data in a key-value format.
-- Redis no tables,no query language and no schema.
-- 
+
+
 
 
 - Ref
